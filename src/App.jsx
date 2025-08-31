@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import {  HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import AppLayout from "./components/AppLayout";
 import Home from "./pages/Home";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -32,7 +32,7 @@ function App() {
     <CartProvider>
       <QueryClientProvider client={queryClient}>
         <ReactQueryDevtools initialIsOpen={true} />
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<AppLayout />}>
               <Route index element={<Navigate replace to={"home"} />} />
@@ -46,7 +46,7 @@ function App() {
               <Route path="user" element={<UserProfile />} />
             </Route>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </QueryClientProvider>
       <Toaster position="top-center" reverseOrder={true} />
     </CartProvider>
