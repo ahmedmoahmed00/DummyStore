@@ -5,7 +5,7 @@ function UserSettings() {
     <div className="flex flex-col gap-6">
       <div className="p-6 border border-gray-200 shadow-sm rounded-xl flex flex-col gap-7">
         <header>
-          <h2 className="leading-none font-semibold">Account Settings</h2>
+          <h2 className="leading-n  one font-semibold">Account Settings</h2>
         </header>
         <div className="flex flex-col gap-4">
           <div className="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
@@ -64,7 +64,7 @@ function UserSettings() {
             Once you delete your account, there is no going back. Please be
             certain.
           </p>
-          <button class="flex items-center bg-red-600 justify-center gap-2 rounded-md text-sm font-medium transition-all text-white shadow-xs  h-9 px-4 py-2 ">
+          <button className="flex items-center bg-red-600 justify-center gap-2 rounded-md text-sm font-medium transition-all text-white shadow-xs  h-9 px-4 py-2 ">
             Delete Account
           </button>
         </div>

@@ -23,3 +23,11 @@ export function calcMinutesLeft(dateStr) {
 export function getOriginalPrice(finalPrice, discountPercent) {
   return finalPrice / (1 - discountPercent / 100);
 }
+
+export function formatDateNow(
+  date = new Date(),
+  locale = "en-US",
+  options = { year: "numeric", month: "2-digit", day: "2-digit" }
+) {
+  return new Intl.DateTimeFormat(locale, options).format(date);
+}

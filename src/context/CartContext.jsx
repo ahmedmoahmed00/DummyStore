@@ -1,5 +1,6 @@
 import { createContext } from "react";
 import { useLocalStorageState } from "../hooks/useLocalStorageState";
+import { formatDateNow } from "../utils/helpers";
 
 const CartContext = createContext();
 
@@ -19,8 +20,16 @@ export function CartProvider({ children }) {
   );
 
   function addItemToCart(item) {
+    const dateNow = formatDateNow();
+
     if (!checkItemInCart(item.id)) {
-      setCart((prev) => [...prev, item]);
+      setCart((prev) => [
+        ...prev,
+        {
+          ...item,
+          addedAt: dateNow,
+        },
+      ]);
     }
   }
 

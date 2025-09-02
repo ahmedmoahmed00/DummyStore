@@ -5,7 +5,7 @@ import Logo from "../ui/Logo";
 import NavLinks from "../ui/NavLinks";
 import Cart from "./Cart";
 import OverLay from "../ui/OverLay";
-import UserIcon from "./UserIcon";
+import UserIcon from "../ui/UserIcon";
 
 function Menu() {
   const [open, setOpen] = useState(false);

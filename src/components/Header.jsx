@@ -2,9 +2,9 @@ import Logo from "../ui/Logo";
 import Menu from "./Menu";
 import Search from "./Search";
 import NavLinks from "../ui/NavLinks";
-import UserIcon from "./UserIcon";
 import Cart from "./Cart";
 import { useEffect, useRef, useState } from "react";
+import UserIcon from "../ui/UserIcon";
 
 function Header() {
   const prevScrollY = useRef(0);
