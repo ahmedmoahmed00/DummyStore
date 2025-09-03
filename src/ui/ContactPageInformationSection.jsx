@@ -11,7 +11,7 @@ function ContactPageInformationSection() {
           <div className="flex items-start gap-3">
             <MapPin className=" w-5 h-5 text-green-600 mt-1" />
             <div>
-              <p class="font-medium">Headquarters</p>
+              <p className="font-medium">Headquarters</p>
               <p className="text-gray-600">
                 123 Commerce Street <br /> New York, NY 10001 <br /> United
                 States
@@ -21,8 +21,8 @@ function ContactPageInformationSection() {
           <div className="flex items-center gap-3">
             <Phone className="w-5 h-5 text-green-600 mt-1" />
             <div>
-              <p class="font-medium">Phone</p>
-              <p class="text-gray-600">+1 (555) 123-4567</p>
+              <p className="font-medium">Phone</p>
+              <p className="text-gray-600">+1 (555) 123-4567</p>
             </div>
           </div>
           <div className="flex items-center gap-3">

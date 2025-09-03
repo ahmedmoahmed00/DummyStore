@@ -64,7 +64,12 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Cart>Cart</Cart>
+                  <Cart
+                    showIcon={false}
+                    classNameText={"text-gray-400 hover:text-white"}
+                  >
+                    Cart
+                  </Cart>
                 </li>
               </ul>
             </div>
@@ -74,7 +79,7 @@ function Footer() {
                 <li>
                   <Link
                     className="text-gray-400 hover:text-white"
-                    to="/products?category=smart-phones"
+                    to="/products?category=smartphones"
                   >
                     Smartphones
                   </Link>
@@ -82,7 +87,7 @@ function Footer() {
                 <li>
                   <Link
                     className="text-gray-400 hover:text-white"
-                    to="/products?category=labtops"
+                    to="/products?category=laptops"
                   >
                     Laptops
                   </Link>
@@ -98,7 +103,7 @@ function Footer() {
                 <li>
                   <Link
                     className="text-gray-400 hover:text-white"
-                    to="/products?category=skincare"
+                    to="/products?category=skin-care"
                   >
                     Skincare
                   </Link>

@@ -36,8 +36,8 @@ function ContactAskedQuestions() {
     <div className="py-6  lg:py-16 bg-gray-50">
       <div className="container max-w-7xl mx-auto px-4">
         <header className="text-center mb-12">
-          <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
-          <p class="text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
             Quick answers to common questions
           </p>
         </header>
